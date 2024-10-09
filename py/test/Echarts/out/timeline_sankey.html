@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+
+</head>
+<body >
+    <div id="cac6fd60e8114203937cc7541ddf48c7" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_cac6fd60e8114203937cc7541ddf48c7 = echarts.init(
+            document.getElementById('cac6fd60e8114203937cc7541ddf48c7'), 'white', {renderer: 'canvas'});
+        var option_cac6fd60e8114203937cc7541ddf48c7 = {
+    "baseOption": {
+        "series": [
+            {
+                "type": "sankey",
+                "name": "\u9500\u552e\u989d",
+                "data": [
+                    {
+                        "name": "Shop A"
+                    },
+                    {
+                        "name": "Shop B"
+                    },
+                    {
+                        "name": "Shop C"
+                    }
+                ],
+                "links": [
+                    {
+                        "source": "Shop A",
+                        "target": "Shop B",
+                        "value": 72
+                    },
+                    {
+                        "source": "Shop B",
+                        "target": "Shop C",
+                        "value": 138
+                    }
+                ],
+                "left": "5%",
+                "top": "5%",
+                "right": "20%",
+                "bottom": "5%",
+                "nodeWidth": 20,
+                "nodeGap": 8,
+                "nodeAlign": "justify",
+                "orient": "horizontal",
+                "draggable": true,
+                "label": {
+                    "show": true,
+                    "position": "right",
+                    "margin": 8
+                },
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 0.2,
+                    "curveness": 0.5,
+                    "type": "solid",
+                    "color": "source"
+                }
+            }
+        ],
+        "timeline": {
+            "axisType": "category",
+            "currentIndex": 0,
+            "orient": "horizontal",
+            "autoPlay": true,
+            "controlPosition": "left",
+            "loop": true,
+            "rewind": false,
+            "show": true,
+            "inverse": false,
+            "playInterval": 1000,
+            "bottom": "-5px",
+            "progress": {},
+            "data": [
+                "2015 \u5e74",
+                "2016 \u5e74",
+                "2017 \u5e74",
+                "2018 \u5e74",
+                "2019 \u5e74"
+            ]
+        },
+        "legend": [
+            {
+                "data": [
+                    "\u9500\u552e\u989d"
+                ],
+                "selected": {},
+                "show": true,
+                "padding": 5,
+                "itemGap": 10,
+                "itemWidth": 25,
+                "itemHeight": 14,
+                "backgroundColor": "transparent",
+                "borderColor": "#ccc",
+                "borderRadius": 0,
+                "pageButtonItemGap": 5,
+                "pageButtonPosition": "end",
+                "pageFormatter": "{current}/{total}",
+                "pageIconColor": "#2f4554",
+                "pageIconInactiveColor": "#aaa",
+                "pageIconSize": 15,
+                "animationDurationUpdate": 800,
+                "selector": false,
+                "selectorPosition": "auto",
+                "selectorItemGap": 7,
+                "selectorButtonGap": 10
+            }
+        ]
+    },
+    "options": [
+        {
+            "series": [
+                {
+                    "type": "sankey",
+                    "name": "\u9500\u552e\u989d",
+                    "data": [
+                        {
+                            "name": "Shop A"
+                        },
+                        {
+                            "name": "Shop B"
+                        },
+                        {
+                            "name": "Shop C"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Shop A",
+                            "target": "Shop B",
+                            "value": 123
+                        },
+                        {
+                            "source": "Shop B",
+                            "target": "Shop C",
+                            "value": 38
+                        }
+                    ],
+                    "left": "5%",
+                    "top": "5%",
+                    "right": "20%",
+                    "bottom": "5%",
+                    "nodeWidth": 20,
+                    "nodeGap": 8,
+                    "nodeAlign": "justify",
+                    "orient": "horizontal",
+                    "draggable": true,
+                    "label": {
+                        "show": true,
+                        "position": "right",
+                        "margin": 8
+                    },
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 0.2,
+                        "curveness": 0.5,
+                        "type": "solid",
+                        "color": "source"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "show": true,
+                    "text": "2015 Shop\uff08A, B, C\uff09\u9500\u552e\u989d",
+                    "target": "blank",
+                    "subtarget": "blank",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5,
+                "order": "seriesAsc"
+            },
+            "color": [
+                "#5470c6",
+                "#91cc75",
+                "#fac858",
+                "#ee6666",
+                "#73c0de",
+                "#3ba272",
+                "#fc8452",
+                "#9a60b4",
+                "#ea7ccc"
+            ]
+        },
+        {
+            "series": [
+                {
+                    "type": "sankey",
+                    "name": "\u9500\u552e\u989d",
+                    "data": [
+                        {
+                            "name": "Shop A"
+                        },
+                        {
+                            "name": "Shop B"
+                        },
+                        {
+                            "name": "Shop C"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Shop A",
+                            "target": "Shop B",
+                            "value": 34
+                        },
+                        {
+                            "source": "Shop B",
+                            "target": "Shop C",
+                            "value": 45
+                        }
+                    ],
+                    "left": "5%",
+                    "top": "5%",
+                    "right": "20%",
+                    "bottom": "5%",
+                    "nodeWidth": 20,
+                    "nodeGap": 8,
+                    "nodeAlign": "justify",
+                    "orient": "horizontal",
+                    "draggable": true,
+                    "label": {
+                        "show": true,
+                        "position": "right",
+                        "margin": 8
+                    },
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 0.2,
+                        "curveness": 0.5,
+                        "type": "solid",
+                        "color": "source"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "show": true,
+                    "text": "2016 Shop\uff08A, B, C\uff09\u9500\u552e\u989d",
+                    "target": "blank",
+                    "subtarget": "blank",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5,
+                "order": "seriesAsc"
+            },
+            "color": [
+                "#5470c6",
+                "#91cc75",
+                "#fac858",
+                "#ee6666",
+                "#73c0de",
+                "#3ba272",
+                "#fc8452",
+                "#9a60b4",
+                "#ea7ccc"
+            ]
+        },
+        {
+            "series": [
+                {
+                    "type": "sankey",
+                    "name": "\u9500\u552e\u989d",
+                    "data": [
+                        {
+                            "name": "Shop A"
+                        },
+                        {
+                            "name": "Shop B"
+                        },
+                        {
+                            "name": "Shop C"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Shop A",
+                            "target": "Shop B",
+                            "value": 23
+                        },
+                        {
+                            "source": "Shop B",
+                            "target": "Shop C",
+                            "value": 94
+                        }
+                    ],
+                    "left": "5%",
+                    "top": "5%",
+                    "right": "20%",
+                    "bottom": "5%",
+                    "nodeWidth": 20,
+                    "nodeGap": 8,
+                    "nodeAlign": "justify",
+                    "orient": "horizontal",
+                    "draggable": true,
+                    "label": {
+                        "show": true,
+                        "position": "right",
+                        "margin": 8
+                    },
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 0.2,
+                        "curveness": 0.5,
+                        "type": "solid",
+                        "color": "source"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "show": true,
+                    "text": "2017 Shop\uff08A, B, C\uff09\u9500\u552e\u989d",
+                    "target": "blank",
+                    "subtarget": "blank",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5,
+                "order": "seriesAsc"
+            },
+            "color": [
+                "#5470c6",
+                "#91cc75",
+                "#fac858",
+                "#ee6666",
+                "#73c0de",
+                "#3ba272",
+                "#fc8452",
+                "#9a60b4",
+                "#ea7ccc"
+            ]
+        },
+        {
+            "series": [
+                {
+                    "type": "sankey",
+                    "name": "\u9500\u552e\u989d",
+                    "data": [
+                        {
+                            "name": "Shop A"
+                        },
+                        {
+                            "name": "Shop B"
+                        },
+                        {
+                            "name": "Shop C"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Shop A",
+                            "target": "Shop B",
+                            "value": 110
+                        },
+                        {
+                            "source": "Shop B",
+                            "target": "Shop C",
+                            "value": 38
+                        }
+                    ],
+                    "left": "5%",
+                    "top": "5%",
+                    "right": "20%",
+                    "bottom": "5%",
+                    "nodeWidth": 20,
+                    "nodeGap": 8,
+                    "nodeAlign": "justify",
+                    "orient": "horizontal",
+                    "draggable": true,
+                    "label": {
+                        "show": true,
+                        "position": "right",
+                        "margin": 8
+                    },
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 0.2,
+                        "curveness": 0.5,
+                        "type": "solid",
+                        "color": "source"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "show": true,
+                    "text": "2018 Shop\uff08A, B, C\uff09\u9500\u552e\u989d",
+                    "target": "blank",
+                    "subtarget": "blank",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5,
+                "order": "seriesAsc"
+            },
+            "color": [
+                "#5470c6",
+                "#91cc75",
+                "#fac858",
+                "#ee6666",
+                "#73c0de",
+                "#3ba272",
+                "#fc8452",
+                "#9a60b4",
+                "#ea7ccc"
+            ]
+        },
+        {
+            "series": [
+                {
+                    "type": "sankey",
+                    "name": "\u9500\u552e\u989d",
+                    "data": [
+                        {
+                            "name": "Shop A"
+                        },
+                        {
+                            "name": "Shop B"
+                        },
+                        {
+                            "name": "Shop C"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "source": "Shop A",
+                            "target": "Shop B",
+                            "value": 72
+                        },
+                        {
+                            "source": "Shop B",
+                            "target": "Shop C",
+                            "value": 138
+                        }
+                    ],
+                    "left": "5%",
+                    "top": "5%",
+                    "right": "20%",
+                    "bottom": "5%",
+                    "nodeWidth": 20,
+                    "nodeGap": 8,
+                    "nodeAlign": "justify",
+                    "orient": "horizontal",
+                    "draggable": true,
+                    "label": {
+                        "show": true,
+                        "position": "right",
+                        "margin": 8
+                    },
+                    "lineStyle": {
+                        "show": true,
+                        "width": 1,
+                        "opacity": 0.2,
+                        "curveness": 0.5,
+                        "type": "solid",
+                        "color": "source"
+                    }
+                }
+            ],
+            "title": [
+                {
+                    "show": true,
+                    "text": "2019 Shop\uff08A, B, C\uff09\u9500\u552e\u989d",
+                    "target": "blank",
+                    "subtarget": "blank",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "textAlign": "auto",
+                    "textVerticalAlign": "auto",
+                    "triggerEvent": false
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "enterable": false,
+                "confine": false,
+                "appendToBody": false,
+                "transitionDuration": 0.4,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5,
+                "order": "seriesAsc"
+            },
+            "color": [
+                "#5470c6",
+                "#91cc75",
+                "#fac858",
+                "#ee6666",
+                "#73c0de",
+                "#3ba272",
+                "#fc8452",
+                "#9a60b4",
+                "#ea7ccc"
+            ]
+        }
+    ]
+};
+        chart_cac6fd60e8114203937cc7541ddf48c7.setOption(option_cac6fd60e8114203937cc7541ddf48c7);
+    </script>
+</body>
+</html>

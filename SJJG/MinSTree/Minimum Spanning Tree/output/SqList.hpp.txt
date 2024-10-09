@@ -1,0 +1,77 @@
+#pragma once
+#ifndef __SQ_LIST_H__
+#define __SQ_LIST_H__
+#endif
+
+// #include <cstring>
+#include <iostream>
+using namespace std;
+
+#define DEFAULT_SIZE 1000
+#define DEFAULT_INFINITY 1000000
+
+// 顺序表模板类的声明
+template <typename T>
+class SqList
+{
+protected:
+    int length;
+    int maxLength;
+    T* data;
+public:
+    SqList(int size = DEFAULT_SIZE);
+    virtual ~SqList();
+    int GetLength() const;  
+    int GetElem(int i, T& e) const;
+    int SetElem(int i, const T& e);
+    int DeleteElem(int i, T& e);
+    int InsertElem(const T& e);
+};
+
+template <typename T>
+SqList<T>::SqList(int size) {
+    this->length = 0;
+    this->maxLength = size;
+    data = new T[DEFAULT_SIZE];
+}
+template <typename T>
+SqList<T>::~SqList() {}
+
+template <typename T>
+int SqList<T>::GetLength() const {
+    return this->length;
+}
+template <typename T>
+int SqList<T>::GetElem(int i, T& e) const {
+    if ((i<this->length)&&i>=0)
+		e = data[i];
+    else
+		cout << "Not found." << endl;
+    return 0;
+}
+template <typename T>
+int SqList<T>::SetElem(int i, const T& e) {
+    if ((i  < this->length) && i >= 0)
+		this->data[i] = e;
+    else
+		cout << "Not found." << endl;
+    return 0;
+}
+template <typename T>
+int SqList<T>::DeleteElem(int i, T& e) {
+    e = this->data[i];
+    if ((i < this->length) && i >= 0) {
+		for (int j = i; j < this->length - 1; j++)
+			this->data[j] = this->data[j + 1];
+		this->length--;
+    }
+    else
+		cout << "Not found." << endl;
+    return 0;
+}
+template <typename T>
+int SqList<T>::InsertElem(const T& e) {
+    this->data[this->length] = e;
+    this->length++;
+    return 0;
+}

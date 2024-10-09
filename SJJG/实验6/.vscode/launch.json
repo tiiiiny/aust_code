@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/chenxin/Code/实验/实验6",
+      "program": "/Users/chenxin/Code/实验/实验6/build/Debug/outDebug"
+    }
+  ]
+}

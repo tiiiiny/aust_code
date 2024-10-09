@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "name": "macos-gcc-arm64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "macos-gcc-arm64",
+      "compilerArgs": [
+        ""
+      ]
+    },
+    {
+      "name": "macos-g++13-arm64",
+      "includePath": [
+        "${default}"
+      ],
+      "defines": [],
+      "macFrameworkPath": [
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+      ],
+      "compilerPath": "/opt/homebrew/bin/g++-13"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,43 @@
+import tkinter as tk
+from tkinter import ttk
+import pymysql
+
+class DatabaseViewer:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Database Viewer")
+        self.root.geometry("800x400")
+
+        self.tree = ttk.Treeview(root)
+        self.tree.pack(fill=tk.BOTH, expand=True)
+
+        self.load_data()
+
+    def load_data(self):
+        db = pymysql.connect(host='localhost', user='admin', password='000', database='test', charset='utf8')
+        cursor = db.cursor()
+        
+        # 选择要显示的表
+        sql = "SELECT * FROM experiments"
+        cursor.execute(sql)
+        
+        # 获取列名
+        columns = [desc[0] for desc in cursor.description]
+        self.tree["columns"] = columns
+
+        # 设置表头
+        for col in columns:
+            self.tree.heading(col, text=col)
+            self.tree.column(col, width=100, anchor=tk.CENTER)
+
+        # 获取数据
+        rows = cursor.fetchall()
+        for row in rows:
+            self.tree.insert("", tk.END, values=row)
+
+        db.close()
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = DatabaseViewer(root)
+    root.mainloop()

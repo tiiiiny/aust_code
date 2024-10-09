@@ -1,0 +1,13 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/chenxin/Code/实验/test/output/CC"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z1fl, symObjAddr: 0x0, symBinAddr: 0x100003C2C, symSize: 0x90 }
+  - { offsetInCU: 0x4443, offset: 0x4443, size: 0x8, addend: 0x0, symName: __ZNSt3__14endlB7v160006IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_, symObjAddr: 0x130, symBinAddr: 0x100003D5C, symSize: 0x58 }
+  - { offsetInCU: 0x4483, offset: 0x4483, size: 0x8, addend: 0x0, symName: __ZNSt3__19use_facetB7v160006INS_5ctypeIcEEEERKT_RKNS_6localeE, symObjAddr: 0x214, symBinAddr: 0x100003E40, symSize: 0x2C }
+  - { offsetInCU: 0x6CFD, offset: 0x6CFD, size: 0x8, addend: 0x0, symName: __Z1fl, symObjAddr: 0x0, symBinAddr: 0x100003C2C, symSize: 0x90 }
+  - { offsetInCU: 0x6D45, offset: 0x6D45, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x90, symBinAddr: 0x100003CBC, symSize: 0x74 }
+  - { offsetInCU: 0x6E1A, offset: 0x6E1A, size: 0x8, addend: 0x0, symName: __ZNSt3__113basic_ostreamIcNS_11char_traitsIcEEElsB7v160006EPFRS3_S4_E, symObjAddr: 0x104, symBinAddr: 0x100003D30, symSize: 0x2C }
+  - { offsetInCU: 0x6E4C, offset: 0x6E4C, size: 0x8, addend: 0x0, symName: __ZNKSt3__19basic_iosIcNS_11char_traitsIcEEE5widenB7v160006Ec, symObjAddr: 0x188, symBinAddr: 0x100003DB4, symSize: 0x8C }
+  - { offsetInCU: 0x6EB8, offset: 0x6EB8, size: 0x8, addend: 0x0, symName: __ZNKSt3__15ctypeIcE5widenB7v160006Ec, symObjAddr: 0x240, symBinAddr: 0x100003E6C, symSize: 0x38 }
+...
